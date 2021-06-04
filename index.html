@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="POST" class="form1">
+        <h3>Calculate your Rewards</h3>
+        <p>
+            <label for="Vendor">Vendor/Bills</label>
+            <input onfocus="this.value=''" id="Vendor" class="Vendor" type="number" min="0" placeholder="Enter a number"
+                value="0">
+        </p>
+        <br><br>
+        <p>
+            <label for="Media">Media/Ad Spend</label>
+            <input onfocus="this.value=''" id="Media" class="Media" type="number" min="0" placeholder="Enter a number"
+                value="0">
+        </p>
+        <br><br>
+        <p>
+            <label for="Corp">Corp. Spend</label>
+            <input onfocus="this.value=''" id="Corp" class="Corp" type="number" min="0" placeholder="Enter a number"
+                value="0">
+        </p>
+        <br><br>
+        <p>
+            <label for="Team">Team Project</label>
+            <input onfocus="this.value=''" id="Team" class="Team" type="number" min="0" placeholder="Enter a number"
+                value="0">
+        </p>
+    </form>
+    <h4>Compare your Rewards</h4>
+    <div class="radiobtns">
+        <div class="input-radio"><input type="radio" class="Brex" id="Brex" name="option" value="0.0">
+            <label for="Brex">Brex</label></div>
+        <div class="input-radio"><input type="radio" class="Stripe" id="Stripe" name="option" value="0.0"> <label
+                for="Stripe">Stripe</label></div>
+        <div class="input-radio"><input type="radio" class="Amex" id="Amex" name="option" value="0.0">
+            <label for="Amex">Amex</label>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="counting-sec">
+        <div class="col">
+            <p class="radiooptn"> </p>
+            $
+            <span class="num">0</span>
+            <div id="w3-blue" class="w3-blue" style="height:24px;"></div>
+        </div>
+        <br><br>
+        <div class="col">
+            <p class="unlimited">Unlimited Rewards</p>
+            $
+            <span class="num2">0</span>
+            <div id="w3-blue2" class="w3-blue" style="height:24px;width: 80%;"></div>
+
+        </div>
+        <br><br>
+        <div class="col">
+            <p>LIFETIME REWARDS</p>
+            $
+            <span class="num3">0</span>
+            <div id="w3-blue3" class="w3-blue" style="height:24px;width:80%"></div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
